@@ -17,6 +17,17 @@ settings.json     → ~/.claude/settings.json (enabled plugins, preferences)
 
 ---
 
+## Claude commands
+
+From within this repo folder, two slash commands are available:
+
+| Command | What it does |
+|---------|-------------|
+| `/install` | Sets up this machine from the repo — copies files, clones gstack, installs all plugins |
+| `/collect` | Pulls latest skills/settings from this machine into the repo and commits+pushes |
+
+---
+
 ## Setup instructions for Claude
 
 If you are Claude and have been given this repo to set up a new machine, follow these steps exactly:
