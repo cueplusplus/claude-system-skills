@@ -67,7 +67,15 @@ claude plugin install vercel@claude-plugins-official
 
 > Note: `deep-plan@piercelamb-plugins` is installed but disabled by default (this is intentional).
 
-### Step 5 — Clean up
+### Step 5 — Install gstack (headless browser skill)
+
+`gstack` is a standalone skill with its own repo and must be cloned separately:
+
+```bash
+git clone https://github.com/garrytan/gstack.git ~/.claude/skills/gstack
+```
+
+### Step 6 — Clean up
 
 ```bash
 rm -rf /tmp/claude-system-skills
