@@ -10,12 +10,12 @@ cp ~/.mcp.json .mcp.json
 cp ~/.claude/settings.json settings.json
 
 # Skills — copy all, skip gstack (it's a git repo, tracked separately)
-rsync -a --delete \
+rsync -aL --delete \
   --exclude 'gstack' \
   ~/.claude/skills/. skills/
 
-# mcpjam skills
-rsync -a --delete \
+# mcpjam skills — -L follows symlinks (mcpjam uses symlinks to ~/.agents/skills/)
+rsync -aL --delete \
   ~/.mcpjam/skills/. mcpjam-skills/
 
 echo "Sync complete."

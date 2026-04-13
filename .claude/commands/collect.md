@@ -6,8 +6,8 @@ Run these steps:
 ```bash
 cp ~/.mcp.json .mcp.json
 cp ~/.claude/settings.json settings.json
-rsync -a --delete --exclude 'gstack' ~/.claude/skills/. skills/
-rsync -a --delete ~/.mcpjam/skills/. mcpjam-skills/
+rsync -aL --delete --exclude 'gstack' ~/.claude/skills/. skills/
+rsync -aL --delete ~/.mcpjam/skills/. mcpjam-skills/
 ```
 
 2. Check if anything changed. If nothing changed, tell the user and stop.
